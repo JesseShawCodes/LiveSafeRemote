@@ -15,6 +15,10 @@ app.use(cors())
 Initial Data Request
 */
 
+app.get('/', function(req, res) {
+    res.send("testing");
+})
+
 app.get('/data', function(req, res) {
     res.json(dataFile);
 })
